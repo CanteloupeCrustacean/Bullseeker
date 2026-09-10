@@ -29,8 +29,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"Bullseeker",
-    "path":"Bullseeker.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
