@@ -13,22 +13,22 @@ var up_key = keyboard_check_pressed(vk_up)
 var down_key = keyboard_check_pressed(vk_down)
 
 //Controls
-if left_key
+if left_key && stuck == false
 {
 	direction = 180
 	image_angle = 180
 }
-if right_key 
+if right_key && stuck == false
 {
 	direction = 0
 	image_angle = 0
 }
-if up_key
+if up_key && stuck == false
 {
 	direction = 90
 	image_angle = 90
 }
-if down_key
+if down_key && stuck == false
 {
 	direction = -90
 	image_angle = -90
@@ -64,5 +64,13 @@ switch (direction)
 //Collision with terrain
 if place_meeting(x,y,global.terrain)
 {
-	instance_destroy()
+	speed = 0
+	stuck = true
+}
+
+//Collision with end-target
+if place_meeting(x,y,o_target)
+{
+	speed = 0
+	stuck = true
 }
