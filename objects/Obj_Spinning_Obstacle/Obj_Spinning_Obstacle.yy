@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"o_dart",
+  "%Name":"Obj_Spinning_Obstacle",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_Spinning_Obstacle","path":"objects/Obj_Spinning_Obstacle/Obj_Spinning_Obstacle.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_dart",
+  "name":"Obj_Spinning_Obstacle",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_dart_cardinal",
-    "path":"sprites/s_dart_cardinal/s_dart_cardinal.yy",
+    "name":"Spr_Yellow_Ball",
+    "path":"sprites/Spr_Yellow_Ball/Spr_Yellow_Ball.yy",
   },
   "spriteMaskId":null,
   "visible":true,
