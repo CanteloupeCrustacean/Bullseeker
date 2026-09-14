@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SFX_Dart_Hit_Target",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.7420408,
+  "name":"SFX_Dart_Hit_Target",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SFX_Dart_Hit_Target.wav",
+  "type":0,
+  "volume":1.0,
+}
