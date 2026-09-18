@@ -6,7 +6,7 @@ var center_y = display_get_gui_height() / 2;
 
 // Title
 draw_set_color(c_white);
-draw_text(center_x, center_y - 150, "UNTITLED GAME");
+draw_text(center_x, center_y - 150, "BullSeeker");
 
 // Menu buttons
 for (var i = 0; i < array_length(menu_items); i++)
@@ -15,12 +15,12 @@ for (var i = 0; i < array_length(menu_items); i++)
 
     if (i == menu_option)
     {
-        draw_set_color(c_teal);
+        draw_set_color(c_navy);
         draw_text(center_x, button_y, "> " + menu_items[i]);
     }
     else
     {
-        draw_set_color(c_silver);
+        draw_set_color(c_navy);
         draw_text(center_x, button_y, menu_items[i]);
     }
 }

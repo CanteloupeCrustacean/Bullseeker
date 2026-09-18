@@ -1,9 +1,9 @@
-if (keyboard_check_pressed(ord("W")))
+if (keyboard_check_pressed(vk_up))
 {
     menu_option -= 1;
 }
 
-if (keyboard_check_pressed(ord("S")))
+if (keyboard_check_pressed(vk_down))
 {
     menu_option += 1;
 }
