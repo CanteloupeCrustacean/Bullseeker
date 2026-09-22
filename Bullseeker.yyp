@@ -41,7 +41,7 @@
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_horizontal_Obstacle","path":"objects/obj_horizontal_Obstacle/obj_horizontal_Obstacle.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
-    {"id":{"name":"obj_Spinning_Obstacle","path":"objects/obj_Spinning_Obstacle/obj_Spinning_Obstacle.yy",},},
+    {"id":{"name":"obj_spinning_Obstacle","path":"objects/obj_spinning_Obstacle/obj_spinning_Obstacle.yy",},},
     {"id":{"name":"obj_vertical_Obstacle","path":"objects/obj_vertical_Obstacle/obj_vertical_Obstacle.yy",},},
     {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

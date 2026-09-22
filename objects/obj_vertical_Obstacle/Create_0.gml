@@ -1,13 +1,8 @@
-// How fast the obstacle moves
-move_speed = 2;
+// How fast the ball moves
+move_speed = 1.3;
 
-// This controls which direction we are moving
-// 1 = down
-// -1 = up
-direction = 1;
+// Start by moving LEFT
+move_direction = -1;
 
-//where the obstacle started
-start_y = y;
-
-// How far the obstacle can move from its starting point
-move_distance = 50;
+// 2 seconds = 120 frames at 60 FPS 
+alarm[0] = 35;
