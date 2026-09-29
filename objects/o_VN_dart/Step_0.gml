@@ -1,68 +1,106 @@
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-//TO DO LIST:
-//	- Figure out how to implement diagonal movement.
-//	- Fix downward movement being slower than other directions
-//	- Adjust dart speed to feel good.
-//	- Fix dart looking blurry while moving.
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// =====================================
+// AIMING
+// =====================================
 
-//Directional keys for redirecting dart
-var left_key = keyboard_check_pressed(vk_left)
-var right_key = keyboard_check_pressed(vk_right)
-var up_key = keyboard_check_pressed(vk_up)
-var down_key = keyboard_check_pressed(vk_down)
-
-//Controls
-if left_key
+if (mouse_check_button_pressed(mb_left))
 {
-	direction = 180
-	image_angle = 180
-}
-if right_key 
-{
-	direction = 0
-	image_angle = 0
-}
-if up_key
-{
-	direction = 90
-	image_angle = 90
-}
-if down_key
-{
-	direction = -90
-	image_angle = -90
+    aiming = true;
 }
 
-//Direction to speed
-//(Diagonal movement needs to be added)
-switch (direction)
+
+// =====================================
+// WHILE AIMING
+// =====================================
+
+if (aiming)
 {
-	case(180):
-	{
-		x -= speed
-		break
-	}
-	case(0):
-	{
-		x += speed
-		break
-	}
-	case(90):
-	{
-		y -= speed
-		break
-	}
-	case(-90):
-	{
-		y += speed
-		//Note: Moves slower going down (I'm not sure why).
-		break
-	}
+    // Calculate how far the mouse is
+    // from the dart
+
+    throw_power = point_distance(
+        x, y,
+        mouse_x, mouse_y
+    ) * power_multiplier;
+
+    // Don't allow more than max power
+
+    throw_power = min(
+        throw_power,
+        max_power
+    );
+
+
+    // Release mouse = throw
+
+    if (mouse_check_button_released(mb_left))
+    {
+        // Find direction AWAY from mouse
+
+        var dir = point_direction(
+            x,
+			y,
+			mouse_x,
+			mouse_y
+        );
+
+        // Give the dart its speed
+
+        hsp = lengthdir_x(
+            throw_power,
+            dir
+        );
+
+        vsp = lengthdir_y(
+            throw_power,
+            dir
+        );
+
+        // Dart is flying again
+
+        flying = true;
+
+        // Stop aiming
+
+        aiming = false;
+    }
 }
 
-//Collision with terrain
-if place_meeting(x,y,global.terrain)
+
+// =====================================
+// DART MOVEMENT
+// =====================================
+
+if (flying)
 {
-	instance_destroy()
+    var current_slowdown = 1;
+
+    // Slow the dart while aiming
+    if (aiming)
+    {
+        current_slowdown = aim_slowdown;
+    }
+
+    x += hsp * dart_slow * current_slowdown;
+    y += vsp * dart_slow * current_slowdown;
+
+    image_angle = point_direction(
+        0,
+        0,
+        hsp,
+        vsp
+    );
+}
+
+
+// Check for collision with the tilemap
+
+var tile = tilemap_get_at_pixel(
+    global.terrain,
+    x,
+    y
+);
+
+if (tile != 0)
+{
+    room_restart();
 }
