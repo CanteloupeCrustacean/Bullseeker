@@ -35,6 +35,7 @@
   },
   "name":"Bullseeker",
   "resources":[
+    {"id":{"name":"Fnt_Score","path":"fonts/Fnt_Score/Fnt_Score.yy",},},
     {"id":{"name":"o_dart","path":"objects/o_dart/o_dart.yy",},},
     {"id":{"name":"o_gamemanager","path":"objects/o_gamemanager/o_gamemanager.yy",},},
     {"id":{"name":"o_VN_dart","path":"objects/o_VN_dart/o_VN_dart.yy",},},
@@ -43,6 +44,7 @@
     {"id":{"name":"obj_horizontal_Obstacle","path":"objects/obj_horizontal_Obstacle/obj_horizontal_Obstacle.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_mirror","path":"objects/obj_mirror/obj_mirror.yy",},},
+    {"id":{"name":"obj_score","path":"objects/obj_score/obj_score.yy",},},
     {"id":{"name":"obj_spinning_Obstacle","path":"objects/obj_spinning_Obstacle/obj_spinning_Obstacle.yy",},},
     {"id":{"name":"obj_vertical_Obstacle","path":"objects/obj_vertical_Obstacle/obj_vertical_Obstacle.yy",},},
     {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},

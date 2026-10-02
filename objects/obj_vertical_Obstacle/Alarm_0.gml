@@ -2,4 +2,4 @@
 move_direction *= -1;
 
 // Start the timer again
-alarm[0] = 35;
+alarm[0] = 60;
