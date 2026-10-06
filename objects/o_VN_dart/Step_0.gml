@@ -35,7 +35,6 @@ if (aiming)
     if (mouse_check_button_released(mb_left))
     {
         // Find direction AWAY from mouse
-
         var dir = point_direction(
             x,
 			y,
@@ -62,6 +61,12 @@ if (aiming)
         // Stop aiming
 
         aiming = false;
+		
+		// Adds 1 to the throw counter
+			global.throws += 1;
+			
+	    // Adds 1 to the throw counter
+			global.score += 150;
     }
 }
 

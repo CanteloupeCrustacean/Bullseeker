@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_door",
+  "%Name":"obj_character_selction",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"o_dart","path":"objects/o_dart/o_dart.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"o_VN_dart","path":"objects/o_VN_dart/o_VN_dart.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_door",
+  "name":"obj_character_selction",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_door_Close",
-    "path":"sprites/spr_door_Close/spr_door_Close.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

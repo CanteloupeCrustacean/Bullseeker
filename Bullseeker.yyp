@@ -40,6 +40,7 @@
     {"id":{"name":"o_gamemanager","path":"objects/o_gamemanager/o_gamemanager.yy",},},
     {"id":{"name":"o_VN_dart","path":"objects/o_VN_dart/o_VN_dart.yy",},},
     {"id":{"name":"Obj_button","path":"objects/Obj_button/Obj_button.yy",},},
+    {"id":{"name":"obj_character_selction","path":"objects/obj_character_selction/obj_character_selction.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_horizontal_Obstacle","path":"objects/obj_horizontal_Obstacle/obj_horizontal_Obstacle.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
@@ -47,6 +48,7 @@
     {"id":{"name":"obj_score","path":"objects/obj_score/obj_score.yy",},},
     {"id":{"name":"obj_spinning_Obstacle","path":"objects/obj_spinning_Obstacle/obj_spinning_Obstacle.yy",},},
     {"id":{"name":"obj_vertical_Obstacle","path":"objects/obj_vertical_Obstacle/obj_vertical_Obstacle.yy",},},
+    {"id":{"name":"rm_character_select","path":"rooms/rm_character_select/rm_character_select.yy",},},
     {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"SFX_Character_Selection","path":"sounds/SFX_Character_Selection/SFX_Character_Selection.yy",},},
@@ -70,6 +72,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
+    {"roomId":{"name":"rm_character_select","path":"rooms/rm_character_select/rm_character_select.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",

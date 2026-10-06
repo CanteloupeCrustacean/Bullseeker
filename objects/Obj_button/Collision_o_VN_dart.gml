@@ -1,5 +1,6 @@
-// The player touched the button
-pressed = true;
+// Player collected a key
 
-// Change the button to the green sprite
-sprite_index = spr_button_green;
+global.keys += 1;
+
+// Remove this key
+instance_destroy();

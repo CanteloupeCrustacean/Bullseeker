@@ -28,5 +28,19 @@ steer_power = 0.25;
 // 0.75  Slightly slow
 aim_slowdown = 0.25;
 
+//==============|
+///PLAYER SCORE |
+//==============|
+
+
+//Player's score
+global.score = 0;
+
+// Amount of times the player has thrown the dart
+global.throws = 0;
+
+// Players name (Note: Make something so the player can type in their name)
+global.player_name = "PLAYER"
+
 
 global.terrain = layer_tilemap_get_id("Collisions")
