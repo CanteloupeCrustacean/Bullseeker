@@ -72,8 +72,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
-    {"roomId":{"name":"rm_character_select","path":"rooms/rm_character_select/rm_character_select.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_character_select","path":"rooms/rm_character_select/rm_character_select.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
