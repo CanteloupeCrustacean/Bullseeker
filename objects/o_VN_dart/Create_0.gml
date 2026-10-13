@@ -1,6 +1,9 @@
 // Is the dart flying?
 flying = false;
 
+// Is the dart stuck
+stuck = false
+
 // Is the player aiming?
 aiming = false;
 
@@ -42,5 +45,8 @@ global.throws = 0;
 // Players name (Note: Make something so the player can type in their name)
 global.player_name = "PLAYER"
 
-
+// Tile set restarts the room
 global.terrain = layer_tilemap_get_id("Collisions")
+
+// Find the tilemap where the dart can stick.
+global.stick_walls = layer_tilemap_get_id("Walls");
