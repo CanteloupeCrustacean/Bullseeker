@@ -5,9 +5,9 @@ var center_x = display_get_gui_width() / 2;
 var center_y = display_get_gui_height() / 2;
 
 // Title
-draw_set_color(c_white);
-draw_set_font(Fnt_Menu);
-draw_text(center_x, center_y - 150, "BullSeeker");
+//draw_set_color(c_white);
+//draw_set_font(Fnt_Menu);
+//draw_text(center_x, center_y - 150, "BullSeeker");
 
 // Menu buttons
 for (var i = 0; i < array_length(menu_items); i++)
